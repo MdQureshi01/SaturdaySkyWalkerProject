@@ -23,7 +23,7 @@ public class EbayHomepageActions {
 	
 	public EbayHomepageActions(){
 		EbayHomepageLocatorsObj = new EbayHomepageLocators();							//Create Object to get the locators from page element class
-		PageFactory.initElements(SetupDrivers.driver, EbayHomepageLocatorsObj);			//Initializing Page factory and driver with locators
+		PageFactory.initElements(SetupDrivers.driver, EbayHomepageLocatorsObj);			//Initializing Page factory and driver with locators.
 	}
 	
 	public void loadEbayHomepage() throws Exception {
@@ -67,7 +67,7 @@ public class EbayHomepageActions {
 	}
 	
 	public void searchItems(String items){
-		EbayHomepageLocatorsObj.txtbxSearch.sendKeys(items);							//Write on Search Textbox
+		EbayHomepageLocatorsObj.txtbxSearch.sendKeys(items);							//Write on Search Textbox.
 		EbayHomepageLocatorsObj.btnSearch.click();	
 	}
 	
